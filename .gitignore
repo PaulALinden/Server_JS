@@ -1,4 +1,4 @@
 # Project ignored files
 package-lock.json
-node_modules/
-coverage/
+/node_modules/
+/coverage/
