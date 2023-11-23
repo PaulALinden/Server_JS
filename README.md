@@ -1,4 +1,4 @@
-# Server created with Node.js.
+# Server created with Node.js.#
 
 #Has basic endpoints that fetches data from a Firebase RTDB.
 
