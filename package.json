@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "@types/jest": "^29.2.5",
+    "jest": "^29.7.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "server": "nodemon src/app/server/server.js localhost 3000"
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "firebase": "^10.6.0",
+    "firebase-admin": "^11.11.0",
+    "supertest": "^6.3.3"
+  }
+}
