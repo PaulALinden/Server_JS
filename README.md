@@ -1,9 +1,9 @@
-# Server created with Node.js.#
+# Server created with Node.js
 
-#Has basic endpoints that fetches data from a Firebase RTDB.
+## Has basic endpoints that fetches data from a Firebase RTDB.
 
-#Server has full CRUD.
+## Server has full CRUD.
 
-#Includes jester testing.
+## Includes jester testing.
 
-more to come.........
+### more to come.........
