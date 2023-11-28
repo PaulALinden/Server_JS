@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
-const firebase = require ("firebase/app");
-const dbOperations = require ("firebase/database");
+const firebase = require("firebase/app");
+const dbOperations = require("firebase/database");
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -16,10 +16,22 @@ const firebaseConfig = {
     appId: "1:361799252824:web:d7230241ada2f12ff4c32d",
     measurementId: "G-7J9NQFE8JE"
 };
+let db = null;
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const db = dbOperations.getDatabase();
+const initApp = async function init() {
+    try {
+        firebase.initializeApp(firebaseConfig);
+        db = dbOperations.getDatabase();
+        console.log('Connected to Firebase');
+        module.exports = {db, dbOperations}
+        return true;
+    } catch (e) {
+        console.log('Couldn\'t connect to Firebase');
+        module.exports = {db}
+        return false;
+    }
+}
 
-module.exports = { db,dbOperations }
+module.exports = {initApp};
 

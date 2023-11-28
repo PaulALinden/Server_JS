@@ -1,5 +1,5 @@
 // server.test.js
-const { server, PORT_NUMBER} = require('../app/server/server');
+const { server, PORT_NUMBER} = require('../app/server');
 const request = require('supertest');
 
 describe('Server Tests', () => {

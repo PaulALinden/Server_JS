@@ -5,7 +5,7 @@
   },
   "scripts": {
     "test": "jest",
-    "server": "nodemon src/app/server/server.js localhost 3000"
+    "server": "nodemon src/app/server.js localhost 3000"
   },
   "dependencies": {
     "ejs": "^3.1.9",
